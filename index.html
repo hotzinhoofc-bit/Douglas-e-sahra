@@ -3,10 +3,37 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Doulgas and Sahra</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            animation: fadeIn 2s;
+        }
+        @keyframes fadeIn {
+            from { opacity: 0; }
+            to { opacity: 1; }
+        }
+        #counter {
+            font-size: 24px;
+            margin: 20px 0;
+        }
+    </style>
 </head>
 <body>
-    <h1>Welcome!</h1>
-    <p>Current Date and Time (UTC): 2026-03-23 05:19:34</p>
+    <h1>Welcome to Douglas and Sahra's Page</h1>
+    <p>This page is dedicated to the love story of Douglas and Sahra.</p>
+    <div id="counter">Visitors: <span id="count">0</span></div>
+    <script>
+        let count = 0;
+        setInterval(() => {
+            count++;
+            document.getElementById('count').innerText = count;
+        }, 1000);
+    </script>
+    <h2>Enjoy This Music</h2>
+    <iframe width="560" height="315" src="https://www.youtube.com/embed/YOUR_VIDEO_ID" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+    <h2>Images</h2>
+    <img src="https://i.imgur.com/your_first_image.png" alt="Image 1" />
+    <img src="https://i.imgur.com/your_second_image.png" alt="Image 2" />
 </body>
 </html>
